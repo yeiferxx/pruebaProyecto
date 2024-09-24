@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; /* quitar las lineas de los enlaces */
+    list-style: none; /*  quitar las bolitas de los enlaces */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+.formulario{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0,0, 0.2) ;
+}
+
+form h2{
+    font-size: 25px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.input-container{
+    position: relative;
+}
+
+
+.input-container > i{
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #02B1F4;
+    color: #ffffff;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+.input-container> input, textarea {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #02B1F4;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+}
+
+
+textarea {
+    font-family: 'Poppins', sans-serif;
+    height: 150px;
+}
+
+::placeholder {
+    color:#a0a0a0;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #02B1F4;
+    padding: 17px 30px;
+    width: 100%;
+    border: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/*ESTILOS  TIPO DE ALIMENTACIÓN*/
+.input-container > select {
+    padding: 17px 15px 17px 65px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    border: 2px solid #02B1F4;
+    font-size: 16px;
+    outline: none;
+    color: #323232;
+    appearance: none; /* Para eliminar el estilo por defecto del navegador */
+}
+
+.input-container select:focus {
+    border-color: #029bda; /* Cambio de color al hacer foco */
+}
+
+/* Para agregar una flecha personalizada en el select */
+.input-container {
+    position: relative;
+}
+
+.input-container:after {
+    content: '\f078'; /* Código unicode para la flecha de Font Awesome */
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #a0a0a0;
+    pointer-events: none;
+}
+
+
+
+
+@media (max-width: 991px){
+    
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+    
+    .header-img img{
+        width: 100%;
+    }
+    
+    .about{
+        padding: 30px;
+        flex-direction: column;
+    }
+    
+    .about-img {
+        width: 100% ;
+        order: 2;
+    }
+    
+    .about-img img {
+        width: 100%;
+    }
+    
+    .about-txt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .servicios {
+        padding: 30px;
+    }
+    
+    .servicios-content {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+    
+    .servicio-1 {
+        margin-bottom: 20px;
+    }
+    
+    .formulario{
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    form {
+        width: 100%;
+    }
+}
